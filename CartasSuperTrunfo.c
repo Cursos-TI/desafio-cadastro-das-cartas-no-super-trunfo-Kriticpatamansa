@@ -1,22 +1,46 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+int main(){
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+   int  turistico,pop;
+   float area, pib;
+   char estado[3], codigo[4];
 
-    return 0;
+   
+
+   printf("Eai, me diz qual é a sigla para o nosso novo estado? (insira a UF)  \n");
+   scanf("%s", estado);
+
+   printf("Qual é a população desse estado?  \n");
+   scanf("%d",&pop);
+
+   printf("e a Área territorial? \n");
+   scanf("%f",&area);
+
+   printf("PIB? Agora eu quero ver! \n");
+   scanf("%f",&pib);
+
+   printf("Quantos pontos turísticos?  \n");
+   scanf("%d",&turistico);
+
+   printf("Tudo certo. Agora dê um código para sua carta. Utilize uma letra seguida de dois números.  \n");
+   printf("exemplo: A01 \n");   
+   scanf("%s",codigo);
+   
+
+   printf("Beleeza! Sua carta foi registrada com sucesso. O feedback está abaixo:  \n");
+   printf("xxx \n");  
+   printf("_____________________________________ \n");  
+   printf("Estado: %s \n", estado);
+   printf("Pop.: %d \n", pop);
+   printf("Área territorial: %.2f Km² \n",area);
+   printf("PIB: %.2f de reais \n",pib);
+   printf("N° de pontos turísticos: %d \n",turistico);
+   printf("Cod.: %s \n",codigo);
+   printf("____________________________________ \n");  
+   printf("xxx \n");
+   printf("xxx \n");
+   printf("BOA SORTE! \n");
+
+
 }
